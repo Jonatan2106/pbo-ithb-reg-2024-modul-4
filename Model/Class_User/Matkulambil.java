@@ -59,6 +59,7 @@ public class Matkulambil implements Action{
         this.n3 = n3;
     }
 
+    @Override
     public String toString(){
         return "\nMata kuliah yang diambil : " + getAmbil() + "\nPresensi : " + getListPresensi() + "\nNilai 1 : " + getN1() + "\nNilai 2 : " + getN2() + "\nNilai 3 : " + getN3();
     }

@@ -23,6 +23,7 @@ public class Sarjana extends Mahasiswa {
         this.listMatakuliah = listMatakuliah;
     }
 
+    @Override
     public String toString(){
         return super.toString() + "\nList Mata Kuliah : " + getListMatakuliah();
     }

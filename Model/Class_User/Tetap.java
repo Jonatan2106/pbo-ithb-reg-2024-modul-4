@@ -19,6 +19,7 @@ class Tetap extends Dosen{
         this.salary = salary;
     }
 
+    @Override
     public String toString(){
         return super.toString() + "\nSalary" + getSalary();
     }

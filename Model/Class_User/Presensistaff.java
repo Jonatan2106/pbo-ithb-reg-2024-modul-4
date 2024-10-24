@@ -39,6 +39,7 @@ public class Presensistaff implements Action{
         this.waktu = waktu;
     }
 
+    @Override
     public String toString(){
         return "\nTanggal : " + getTanggal() + "\nStatus : " + getStatus() + "\nWaktu : " + getWaktu();
     }

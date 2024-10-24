@@ -51,6 +51,7 @@ public abstract class User implements Action {
         this.noTelp = noTelp;
     }
 
+    @Override
     public String toString(){
         return "Nama : " + getNama() + "\nAlamat : " + getAlamat() + "\nTTL : " + getTempatTanggalLahir() + "\nTelepon : " + getNoTelp();
     }

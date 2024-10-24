@@ -29,6 +29,7 @@ public class Matkulajar implements Action{
         this.ngajar = ngajar;
     }
 
+    @Override
     public String toString(){
         return "\nMatkulajar diajar=" + getDiajar() + " \nNgajar : " + getNgajar(); 
     }

@@ -24,6 +24,7 @@ public class Karyawan extends Staff {
         this.listPresensiStaff = listPresensiStaff;
     }
 
+    @Override
     public String toString(){
         return super.toString() + "\nSalary : " + getSalary() + "\nList Presensi Staff : " + getListPresensiStaff();
     }

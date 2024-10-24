@@ -29,6 +29,7 @@ public class Dosen extends Staff {
         this.matkulDiajar = matkulDiajar;
     }
 
+    @Override
     public String toString(){
         return super.toString() + "\nDepartemen : " + getDepartemen() + "\nMatkul Diajar : " + getMatkulDiajar();
     }

@@ -30,6 +30,7 @@ public class Presensi implements Action{
         this.status = status;
     }
 
+    @Override
     public String toString(){
         return "Tanggal: " + getTanggal() + "\nStatus: " + getStatus();
     }

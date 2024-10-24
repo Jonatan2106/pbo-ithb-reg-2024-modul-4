@@ -16,6 +16,7 @@ public abstract class Staff extends User {
         this.nik = nik;
     }
 
+    @Override
     public String toString(){
         return super.toString() + "\nNIK : " + getNik();
     }

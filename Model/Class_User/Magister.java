@@ -29,6 +29,7 @@ public class Magister extends Mahasiswa {
         this.judulTesis = judulTesis;
     }
 
+    @Override
     public String toString(){
         return super.toString() + "\nList Matkul : " + getListMatKul() + "\nJudul Tesis : " + getJudulTesis();
     }

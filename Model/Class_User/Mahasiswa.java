@@ -30,6 +30,7 @@ public abstract class Mahasiswa extends User {
         this.nama = nama;
     }
 
+    @Override
     public String toString(){
         return super.toString() + "\nNIM : " + getNim() + "\nNama : " + getNama();
     }
