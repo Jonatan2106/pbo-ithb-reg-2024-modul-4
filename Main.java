@@ -9,17 +9,17 @@ public class Main {
     public static void main(String[] args) {
 
         ArrayList<Presensi> listPresensi1 = new ArrayList<>();
-        Presensi presensi1 = new Presensi(Date.valueOf("2024-10-01"), 1); // Hadir
-        Presensi presensi2 = new Presensi(Date.valueOf("2024-10-08"), 0); // Tidak Hadir
-        Presensi presensi3 = new Presensi(Date.valueOf("2024-10-15"), 1); // Hadir
+        Presensi presensi1 = new Presensi(Date.valueOf("2024-10-01"), 1); 
+        Presensi presensi2 = new Presensi(Date.valueOf("2024-10-08"), 0); 
+        Presensi presensi3 = new Presensi(Date.valueOf("2024-10-15"), 1); 
         listPresensi1.add(presensi1);
         listPresensi1.add(presensi2);
         listPresensi1.add(presensi3);
 
         ArrayList<Presensi> listPresensi2 = new ArrayList<>();
-        presensi1 = new Presensi(Date.valueOf("2024-10-01"), 1); // Hadir
-        presensi2 = new Presensi(Date.valueOf("2024-10-08"), 1); // Hadir
-        presensi3 = new Presensi(Date.valueOf("2024-10-15"), 1); // Hadir
+        presensi1 = new Presensi(Date.valueOf("2024-10-01"), 1); 
+        presensi2 = new Presensi(Date.valueOf("2024-10-08"), 1); 
+        presensi3 = new Presensi(Date.valueOf("2024-10-15"), 1); 
         listPresensi2.add(presensi1);
         listPresensi2.add(presensi2);
         listPresensi2.add(presensi3);
@@ -36,7 +36,6 @@ public class Main {
         matkulSarjana.add(matkulAmbilSarjana2);
         matkulSarjana.add(matkulAmbilSarjana3);
 
-        ArrayList<Sarjana> mahasiswaSarjana = new ArrayList<>();
         ArrayList<User> user = new ArrayList<>();
         Sarjana mahasiswaSarjana1 = new Sarjana("Boston", "Permata Biru", "Medan 2004-12-15", "081234567890", "1123039", "Informatika", matkulSarjana);
         Sarjana mahasiswaSarjana2 = new Sarjana("Jochal", "Dipatiukur", "Bandung 2004-09-17", "081234567891", "1123015", "Informatika", matkulSarjana);
@@ -54,13 +53,11 @@ public class Main {
         matkulMagister.add(matkulAmbilMagister2);
         matkulMagister.add(matkulAmbilMagister3);
 
-        ArrayList<Magister> mahasiswaMagister = new ArrayList<>();
         Magister magister1 = new Magister("Calvin", "Jl. Aceh", "Bandung 2004-09-15", "082122221111", "112340", "Magister Informatika", matkulMagister, "ALOKASI MEMORI EKSTRA");
         Magister magister2 = new Magister("Felix", "Jl. Jakarta", "Medan 2004-08-29", "081234567891", "1123015", "Magister Informatika", matkulMagister, "ALGORITMA PENAWARAN EDGE PADA BIPARTITE GRAPH");
         user.add(magister1);
         user.add(magister2);
 
-        ArrayList<Doktor> mahasiswaDoktor = new ArrayList<>();
         Doktor doktor1 = new Doktor("Dewi Kusuma", "Jl. Merdeka No. 10", "1990-05-15", "081234567890", "1124002", "Teknik Elektro", "Penerapan Deep Learning pada Pengolahan Sinyal", 90, 92, 91);
         Doktor doktor2 = new Doktor("Budi Santoso", "Jl. Sudirman No. 22", "1988-07-20", "081987654321", "1124002", "Teknik Elektro", "Penerapan Deep Learning pada Pengolahan Sinyal", 88, 92, 89);
         Doktor doktor3 = new Doktor("Siti Rahma", "Jl. Diponegoro No. 5", "1991-09-10", "081223344556", "1124003", "Teknik Mesin", "Simulasi Dinamika Fluida untuk Sistem Pendingin", 90, 87, 91);
@@ -82,7 +79,6 @@ public class Main {
         presensiStaffs.add(presensiStaff2);
         presensiStaffs.add(presensiStaff3);
 
-        ArrayList<Karyawan> karyawan = new ArrayList<>();
         Karyawan karyawan1 = new Karyawan("Ipnul", "Jl. Soekarno", "Jakarta 1985-11-12", "082112345671", "123456789", 3000000, "32014567891");
         Karyawan karyawan2 = new Karyawan("Joko", "Jl. Jalan", "Pontianak 1991-05-02", "082112345672", "23456789" ,2500000, "32023678912");
         Karyawan karyawan3 = new Karyawan("Budi", "Jl. Cipadung", "Aceh 1999-05-02", "082112345673", "3456789" ,2500000, "32032789123");
@@ -111,35 +107,10 @@ public class Main {
         user.add(dosen2);
         user.add(dosen3);
         
-        // for (Mahasiswa mhsSarjana : mahasiswaSarjana) {
-        //     String msg = mhsSarjana.toString();
-        //     System.out.println(msg);
-        //     System.out.println("====================================================================");
-        // }
-        // for (Mahasiswa mhsMagister : mahasiswaMagister) {
-        //     String msg = mhsMagister.toString();
-        //     System.out.println(msg);
-        //     System.out.println("====================================================================");
-        // }
-        // for (Mahasiswa mhsDoktor : mahasiswaDoktor) {
-        //     String msg = mhsDoktor.toString();
-        //     System.out.println(msg);
-        //     System.out.println("====================================================================");
-        // }
-        // for (Staff _karyawan : karyawan) {
-        //     String msg = _karyawan.toString();
-        //     System.out.println(msg);
-        //     System.out.println("====================================================================");
-        // }
         for (User _user : user) {
             String msg = _user.toString();
             System.out.println(msg);
             System.out.println("====================================================================");
         }
-        // for (Staff _dosen : dosens) {
-        //     String msg = _dosen.toString();
-        //     System.out.println(msg);
-        //     System.out.println("====================================================================");
-        // }
     }
 }
