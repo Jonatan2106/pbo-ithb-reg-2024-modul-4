@@ -2,7 +2,9 @@ package Model.Class_User;
 
 import java.util.ArrayList;
 
-public class Matkulambil {
+import Model.Class_Interface.Action;
+
+public class Matkulambil implements Action{
     private Matakuliah ambil;
     private ArrayList<Presensi> listPresensi = new ArrayList<>();
     private double n1;
@@ -55,5 +57,9 @@ public class Matkulambil {
 
     public void setN3(double n3) {
         this.n3 = n3;
+    }
+
+    public String toString(){
+        return "\nMata kuliah yang diambil : " + getAmbil() + "\nPresensi : " + getListPresensi() + "\nNilai 1 : " + getN1() + "\nNilai 2 : " + getN2() + "\nNilai 3 : " + getN3();
     }
 }

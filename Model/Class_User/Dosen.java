@@ -28,4 +28,8 @@ public class Dosen extends Staff {
     public void setMatkulDiajar(ArrayList<Matkulajar> matkulDiajar) {
         this.matkulDiajar = matkulDiajar;
     }
+
+    public String toString(){
+        return super.toString() + "\nDepartemen : " + getDepartemen() + "\nMatkul Diajar : " + getMatkulDiajar();
+    }
 }

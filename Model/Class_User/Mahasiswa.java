@@ -4,6 +4,10 @@ public abstract class Mahasiswa extends User {
     private String nim;
     private String nama;
 
+    public Mahasiswa(){
+
+    }
+
     public Mahasiswa(String nama, String alamat, String tempatTanggalLahir, String noTelp, String nim, String nama2) {
         super(nama, alamat, tempatTanggalLahir, noTelp);
         this.nim = nim;
@@ -24,5 +28,9 @@ public abstract class Mahasiswa extends User {
 
     public void setNama(String nama){
         this.nama = nama;
+    }
+
+    public String toString(){
+        return super.toString() + "\nNIM : " + getNim() + "\nNama : " + getNama();
     }
 }

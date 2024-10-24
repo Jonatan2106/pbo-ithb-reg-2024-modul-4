@@ -15,4 +15,8 @@ public abstract class Staff extends User {
     public void setNik(String nik){
         this.nik = nik;
     }
+
+    public String toString(){
+        return super.toString() + "\nNIK : " + getNik();
+    }
 }

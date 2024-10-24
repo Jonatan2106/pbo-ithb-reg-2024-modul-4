@@ -4,6 +4,10 @@ import java.util.ArrayList;
 
 public class Sarjana extends Mahasiswa {
     private ArrayList<Matkulambil> listMatakuliah = new ArrayList<>();
+
+    public Sarjana(){
+
+    }
     
     public Sarjana(String nama, String alamat, String tempatTanggalLahir, String noTelp, String nim, String nama2,
             ArrayList<Matkulambil> listMatakuliah) {
@@ -17,5 +21,9 @@ public class Sarjana extends Mahasiswa {
 
     public void setListMatakuliah(ArrayList<Matkulambil> listMatakuliah) {
         this.listMatakuliah = listMatakuliah;
+    }
+
+    public String toString(){
+        return super.toString() + "\nList Mata Kuliah : " + getListMatakuliah();
     }
 }

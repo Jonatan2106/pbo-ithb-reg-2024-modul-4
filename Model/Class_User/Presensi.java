@@ -2,9 +2,15 @@ package Model.Class_User;
 
 import java.util.Date;
 
-public class Presensi{
+import Model.Class_Interface.Action;
+
+public class Presensi implements Action{
     private Date tanggal;
     private int status;
+
+    public Presensi(){
+
+    }
     
     public Presensi(Date tanggal, int status) {
         this.tanggal = tanggal;
@@ -22,5 +28,9 @@ public class Presensi{
     }
     public void setStatus(int status) {
         this.status = status;
+    }
+
+    public String toString(){
+        return "Tanggal: " + getTanggal() + "\nStatus: " + getStatus();
     }
 }

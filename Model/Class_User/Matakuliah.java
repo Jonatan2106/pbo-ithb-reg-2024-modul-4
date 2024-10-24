@@ -1,6 +1,8 @@
 package Model.Class_User;
 
-public class Matakuliah {
+import Model.Class_Interface.Action;
+
+public class Matakuliah implements Action{
     private String kode;
     private int sks;
     private String nama;
@@ -32,6 +34,11 @@ public class Matakuliah {
     }
     public void setNama(String nama) {
         this.nama = nama;
+    }
+
+    @Override
+    public String toString(){
+        return "Kode : " + getKode() + "\nSks : " + getSks() + "\nNama : " + getNama(); 
     }
     
 }

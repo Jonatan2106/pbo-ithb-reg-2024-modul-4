@@ -39,4 +39,8 @@ public class Doktor extends Mahasiswa {
     public void setNilaiSidang3(int nilaiSidang3) {
         this.nilaiSidang3 = nilaiSidang3;
     }
+
+    public String toString(){
+        return super.toString() + "\nJudul Penelitian : " + getJudulPenelitian() + "\nNilai Sidang 1 : " + getNilaiSidang1() + "\nNilai Sidang 2 : " + getNilaiSidang2() + "\nNilai Sidang 3 : " + getNilaiSidang3();
+    }
 }

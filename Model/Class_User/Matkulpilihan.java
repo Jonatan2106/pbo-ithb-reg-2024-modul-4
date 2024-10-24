@@ -16,4 +16,8 @@ public class Matkulpilihan extends Matakuliah {
         this.jumlahMinMahasiswa = jumlahMinMahasiswa;
     }
 
+    public String toString(){
+        return super.toString() + "\nJumlah minimal mahasiswa : " + getJumlahMinMahasiswa();
+    }
+
 }

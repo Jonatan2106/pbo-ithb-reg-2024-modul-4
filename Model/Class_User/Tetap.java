@@ -18,4 +18,8 @@ class Tetap extends Dosen{
     public void setSalary(int salary) {
         this.salary = salary;
     }
+
+    public String toString(){
+        return super.toString() + "\nSalary" + getSalary();
+    }
 }

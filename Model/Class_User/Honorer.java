@@ -19,4 +19,8 @@ class Honorer extends Dosen{
         this.honorPerSKS = honorPerSKS;
     }
 
+    public String toString(){
+        return super.toString() + "\nHonor per SKS: " + getHonorPerSKS();
+    }
+
 }

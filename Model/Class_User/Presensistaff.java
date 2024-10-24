@@ -3,11 +3,16 @@ package Model.Class_User;
 import java.time.LocalTime;
 import java.util.Date;
 import Model.Class_Enum.*;
+import Model.Class_Interface.Action;
 
-public class Presensistaff {
+public class Presensistaff implements Action{
     private Date tanggal;
     private Status status;
     private LocalTime waktu;
+
+    public Presensistaff(){
+
+    }
     
     public Presensistaff(Date tanggal, Status status, LocalTime localTime) {
         this.tanggal = tanggal;
@@ -32,5 +37,9 @@ public class Presensistaff {
     }
     public void setWaktu(LocalTime waktu) {
         this.waktu = waktu;
+    }
+
+    public String toString(){
+        return "\nTanggal : " + getTanggal() + "\nStatus : " + getStatus() + "\nWaktu : " + getWaktu();
     }
 }

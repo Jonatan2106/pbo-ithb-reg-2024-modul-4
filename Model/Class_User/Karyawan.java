@@ -23,4 +23,8 @@ public class Karyawan extends Staff {
     public void setListPresensiStaff(String listPresensiStaff) {
         this.listPresensiStaff = listPresensiStaff;
     }
+
+    public String toString(){
+        return super.toString() + "\nSalary : " + getSalary() + "\nList Presensi Staff : " + getListPresensiStaff();
+    }
 }

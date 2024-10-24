@@ -1,11 +1,17 @@
 package Model.Class_User;
 
-abstract class User {
+import Model.Class_Interface.*;
+
+public abstract class User implements Action {
     private String nama;
     private String alamat;
     private String tempatTanggalLahir;
     private String noTelp;    
 
+    public User(){
+
+    }    
+    
     public User(String nama, String alamat, String tempatTanggalLahir, String noTelp) {
         this.nama = nama;
         this.alamat = alamat;
@@ -43,5 +49,9 @@ abstract class User {
 
     public void setNoTelp(String noTelp){
         this.noTelp = noTelp;
+    }
+
+    public String toString(){
+        return "Nama : " + getNama() + "\nAlamat : " + getAlamat() + "\nTTL : " + getTempatTanggalLahir() + "\nTelepon : " + getNoTelp();
     }
 }
